@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import bootStrap from './services/bootStrap'
-import MainBanner from './components/MainBannerGraphic'
+import MainBanner from './graphics/MainBannerGraphic'
 import Link from 'next/link'
 import { ApolloClient,gql, InMemoryCache } from '@apollo/client'
 

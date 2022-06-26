@@ -1,7 +1,9 @@
+import Image from "next/dist/client/image";
+
 const Header = () => {
     return ( 
         <div className="col-12 header-container">
-                <div id="gdpr" style="display:none;">
+                <div id="gdpr">
                     <div className="alert row align-items-center" role="contentinfo">
                         <div className="col gdpr-content">
                             <h1 className="gdpr-title">Cookie Acknowledgement</h1>
@@ -24,12 +26,24 @@ const Header = () => {
                     <div className="row align-items-center">
                         <div className="col-9 col-sm-4 col-md-5 col-xl-4 image header-logo">
                             <a href="">
-                                <img src="https://www.auburn.edu/academic/provost/2022-template/_assets/unit-logos/biggio-center/bc_informal_h_fullcolor.png" className="d-print-none" alt=""/> 
-                                <img src="https://www.auburn.edu/academic/provost/2022-template/_assets/unit-logos/biggio-center/bc_informal_h_onecolor_black.png" alt="" className="d-none d-print-block" style="width:500px;"/>	
+                                <Image
+                                    src="https://www.auburn.edu/academic/provost/2022-template/_assets/unit-logos/biggio-center/bc_informal_h_fullcolor.png"
+                                    alt="Biggio Center Informal Logo"
+                                    width={500}
+                                    height={500}
+                                    className="d-print-none"
+                                />
+                                 <Image
+                                    src="https://www.auburn.edu/academic/provost/2022-template/_assets/unit-logos/biggio-center/bc_informal_h_onecolor_black.png"
+                                    alt="Biggio Center Informal Black Logo"
+                                    width={500}
+                                    height={500}
+                                    className="d-none d-print-block"
+                                />
                             </a>
                         </div>	
                         <div className="col-3 col-sm-1 nav-toggle d-print-none">
-                            <button type="button" id="nav_btn_modal" className="btn" style="" data-bs-toggle="modal" data-bs-target="#au_navigation"><div className="visually-hidden">Toggle site navigation</div>
+                            <button type="button" id="nav_btn_modal" className="btn" data-bs-toggle="modal" data-bs-target="#au_navigation"><div className="visually-hidden">Toggle site navigation</div>
                                 <div className="col">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
                                     <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>	
@@ -39,7 +53,7 @@ const Header = () => {
                                     <span className="d-none d-xl-block">Menu</span>
                                 </div>	
                             </button>
-                            <button type="button" id="nav_btn_push" className="btn visually-hidden" style="" data-bs-toggle="collapse" data-bs-target="#au_navigation2"><div className="visually-hidden">Toggle site navigation</div>
+                            <button type="button" id="nav_btn_push" className="btn visually-hidden" data-bs-toggle="collapse" data-bs-target="#au_navigation2"><div className="visually-hidden">Toggle site navigation</div>
                                 <div className="col">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
                                     <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>	
@@ -51,7 +65,7 @@ const Header = () => {
                             </button>
                         </div>
                         <div className="col-3 col-sm-1 nav-toggle nav-toggle2 d-print-none">
-                            <button type="button" id="nav_btn_push" className="btn visually-hidden" style="" data-bs-toggle="collapse" data-bs-target="#au_navigation2"><div className="visually-hidden">Toggle site navigation</div>
+                            <button type="button" id="nav_btn_push" className="btn visually-hidden" data-bs-toggle="collapse" data-bs-target="#au_navigation2"><div className="visually-hidden">Toggle site navigation</div>
                                 <div className="col">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
                                     <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>	
@@ -93,7 +107,7 @@ const Header = () => {
                                     </div>                                    
                                     <div className="col-sm-12">                                   
                                         <form action="https://search.auburn.edu" className="" method="get">
-                                            <input className="form-control form-control-lg searchfield" type="text" name="q" aria-label="Auburn University Search" role="search" placeholder="Search Auburn.edu" style="width:100%;"/>
+                                            <input className="form-control form-control-lg searchfield" type="text" name="q" aria-label="Auburn University Search" role="search" placeholder="Search Auburn.edu"/>
                                             <input type="hidden" name="cx" value="006456623919840955604:pinevfah6qm"/>
                                             <input type="hidden" name="ie" value="utf-8"/>
                                             <input type="submit" className="visually-hidden-focusable" value="Search"/>
