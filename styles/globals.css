@@ -14,3 +14,965 @@ a {
 * {
   box-sizing: border-box;
 }
+
+h1.sr-only {
+  display: none;
+}
+
+p.content-value {
+  font-size: 1.25em;
+  text-align: left;
+}
+/*----------------------- Header Styles ------------------*/
+.col-12.header-container {
+  width:100vw;
+  background-color:#03244d;
+}
+
+.col-3.main-header-spacer {
+  display: inline-block;
+  position: relative;
+  width: 15vw;
+  background-color: transparent;
+}
+
+.col-6.main-header-container {
+  display:inline-block;
+  position: relative;
+  width:70vw;
+  background-color:#03244d;
+}
+
+.col-7.logo-container {
+  display: inline-block;
+  position: relative;
+  width:30vw;
+  height: auto;
+  background-color:transparent;
+}
+
+.col-2.middle-header-spacer {
+  display: inline-block;
+  position: relative;
+  width: 20vw;
+  background-color: transparent;
+}
+
+.col-3.unit-container {
+  display: inline-block;
+  position: relative;
+  width: 20vw;
+  background-color: transparent;
+}
+  .col-3.unit-container h1 {
+    display: block;
+    position: relative;
+    color:#fff;
+    font-size: 2em;
+    text-align: center;
+    margin-top:2vw;
+  }
+
+  .col-3.unit-container p.unit-sub-text {
+    display: block;
+    position: relative;
+    color:#fff;
+    font-size: .75em;
+    text-align: center;
+    margin: 0;
+  }
+
+.col-12.nav-container {
+  display: block;
+  position: relative;
+  width: 100vw;
+  background-color: #cc4e0b; 
+}
+
+/* -------------------------------- End Header Styles -----------------------------*/
+
+/*-------------------------------- Navigation Styles -------------------------------*/
+
+.nav {
+  display: block;
+}
+.navigation-wrapper {
+  background-color: rgb(204, 78, 11);
+  width: 100vw;
+  padding-top: 0.5vh;
+}
+.navbar {
+  border: 0px;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+}
+
+.nav-link {
+  padding: 0;
+}
+
+.au-menu {
+  position: relative;
+  width: 75vw;
+  margin: 0 auto;
+  border-radius: 0;
+}
+.au-ul {
+  position: relative;
+  width: 75vw;
+}
+.au-li {
+  position: relative;
+  width: 50vw;
+  text-align: center;
+  font-family: 'montserrat-semi-bold, san-serif';
+}
+.au-li a {
+  font-size: 1.5em;
+  color: #fff;
+  font-family: var(--bs-font-sans-serif);
+}
+
+.dropdown-menu {
+  padding: 0 0 ;
+}
+.dropdown-menu[data-bs-popper] {
+  margin-top: 0;
+}
+
+.dropdown-item {
+  background-color: #03244d;
+  width: 24.5vw;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: #cc4e0b;
+  color:#fff;
+}
+
+a.nav-link.active, a.nav-link:hover, a.nav-link:focus {
+  color: #fff;
+  text-decoration: none;
+}
+li.nav-item.au-li.active {
+  background-color: transparent;
+  background-image: url("/assets/menu-hover-btn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none;
+  width: 50vw;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.au-li:focus, .au-li:visited, .au-li:hover, li.nav-item.au-li-2.active, .au-li-2:focus, .au-li-2:visited, .au-li-2:hover {
+  background-color: transparent;
+  background-image: url("/assets/menu-hover-btn.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.au-ul-2 {
+  width: 50vw;
+}
+.au-li-2 {
+  position: relative;
+  width: 100vw;
+  text-align: center;
+  font-family: 'montserrat-semi-bold, san-serif';
+}
+.au-li-2 a {
+  font-size: 2rem;
+  color: #fff;
+  font-family: var(--bs-font-sans-serif);
+}
+
+/*-------------------------------- End Navigation Styles -------------------------- */
+
+/* -------------------------------- Home Page Styles ------------------------------ */
+
+#main-container {
+  position: relative;
+  bottom: 0;
+}
+.home-page-banner-graphic {
+  position: relative;
+  background-color: #aeaeae;
+  z-index: 2;
+  width: 100%;
+}
+.biggio-search {
+  display: inline-block;
+  position: absolute;
+  width: 30%;
+  left: 35%;
+  top: 44%;
+}
+input.form-control.me-2 {
+  height: 50px;
+  font-size: 1em;
+}
+.btn-outline-success {
+  color: #fff;
+  border-color: rgb(204, 78, 11);
+  background-color: #03244d;
+  width: 8em;
+  font-size: 1em;
+}
+.btn-outline-success:hover {
+  border-color: #03244d;
+  background-color: rgb(204, 78, 11);
+}
+.home-page-wrapper {
+  position: relative;
+  width: 100%;
+}
+.biggio-content-wrapper {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 5vh;
+}
+.home-page-content-sub-heading {
+  color: #000;
+  font-size: 2em;
+  font-family: montserrat, san-serif;
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p.content-value.values {
+  font-size: 1.25em;
+  text-align: center;
+  padding-bottom: 5vh;
+}
+
+.col-12.units-container {
+  padding-bottom: 5vh;
+}
+.col-4.units-box {
+  position: relative;
+  display: inline-block;
+  width: 33%;
+  min-height: 25vh;
+  transform: translateY(0);
+  transition: .5s;
+}
+.ub-1 {
+  background-image: url("/assets/drk-blue-trap-down.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ub-2 {
+  background-image: url("/assets/aqua-trap-down.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ub-3 {
+  background-image: url("/assets/aqua-trap-down.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ub-4 {
+  background-image: url("/assets/lime-trap-down.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ub-5 {
+  background-image: url("/assets/yellow-trap-up.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.ub-6 {
+  background-image: url("/assets/orange-trap-up.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.col-4.units-box.ub-1:hover, .col-4.units-box.ub-2:hover, .col-4.units-box.ub-3:hover {
+  transform: translateY(-20px);
+  transition: .5s;
+}
+.col-4.units-box.ub-4:hover, .col-4.units-box.ub-5:hover, .col-4.units-box.ub-6:hover {
+  transform: translateY(20px);
+  transition: .5s;
+}
+.unit-box-text {
+  color: #03244d;
+  text-align: center;
+  font-size: 2vw;
+  margin-top: 4vh;
+}
+.ub-box-text-btm {
+  margin-top: 6vh;
+}
+li.content-value {
+  color: #000;
+  font-size: 1vw;
+  font-family: montserrat, san-serif;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  margin-left: 2vw;
+}
+
+/* ------------------------------- End Home Page Style ---------------------*/
+/*------------------------------ WHo We Are Style --------------------------- */
+
+.btn.active, .btn:active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: transparent;
+  border-color: transparent;
+  background-image: url("/assets/filter-btn-img-top-down.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover, .btn-primary:hover {
+  color: #03244d;
+  background-color: transparent;
+  border-color: transparent;
+  background-image: url("/assets/filter-btn-img-top-down-hover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none;
+}
+.btn-primary, .btn-primary.active:focus {
+  background-color: transparent !important;
+  color: #fff;
+  font-size: 1vw;
+  transform: scale(1);
+  transition: all 0.25s;
+  border-radius: 0;
+  border-style: none!important;
+  border-color: transparent!important;
+  outline: 0px;
+  outline-offset: 0px;
+}
+.biggio-filter-btns {
+  position: relative;
+  width: 15%;
+  border-radius: 0 !important;
+  margin-left: 4%;
+  background-color: transparent;
+  background-image: url("/assets/filter-btn-img-top-down.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-decoration: none;
+  border-left: none;
+  border-top: none;
+  border-right: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  min-height: 3em;
+}
+.txt-rotate {
+  transform: rotateX(-3deg);
+}
+.staff-filter {
+  position: relative;
+  margin: 2% 0;
+}
+/*------------------------ Filter Styles ----------------- */
+
+.is-animated {
+  animation: .6s slide-right;
+}
+@keyframes slide-right {
+0% {
+transform: translate(-100%) rotate(0deg);
+}
+100% {
+transform: none;
+}
+}
+.is-animated-content {
+  animation: .6s slide-left;
+}
+@keyframes slide-left {
+0% {
+transform: translate(100%) rotate(0deg);
+}
+100% {
+transform: none;
+}
+}
+/*
+  .filter a.active:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 0;
+    border-color: #333 transparent transparent transparent;
+  }
+  */
+.btn-primary, .btn-primary.active:focus {
+  background-color: #03244d;
+  color: #fff;
+  font-size: 1vw;
+  transform: scale(1);
+  transition: all 0.25s;
+  border-radius: 15px;
+  border-style: outset;
+  border-color: #cc4e0b;
+  outline: 0px;
+  outline-offset: 0px;
+}
+.display-none {
+  display: none;
+}
+.img-about {
+  width: 90%;
+  left: 5.5%;
+}
+.insight-bios-container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+.insight-bios-outer {
+  position: relative;
+  width: 22em;
+  display: inline-block;
+  margin: 5em;
+  left: 1%;
+}
+.insight-bios-outer:hover {
+  box-shadow: 0px 0px 7px #cc4e0b;
+}
+.insight-bios-inner-top {
+  position: relative;
+  width: 100%;
+  background: rgb(225,225,225);
+  background: -webkit-linear-gradient(bottom, rgba(225,225,225,1) 0%, rgba(225,225,225,1) 30%, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(bottom, rgba(225,225,225,1) 0%, rgba(225,225,225,1) 30%, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to top, rgba(225,225,225,1) 0%, rgba(225,225,225,1) 30%, rgba(255,255,255,1) 67%, rgba(255,255,255,1) 100%);
+  box-shadow: 0px 96px 7px #03244d;
+}
+.insight-bios-img {
+  position: relative;
+  width: 75%;
+  border-radius: 160px;
+  left: 15%;
+  background-color: #03244d;
+}
+.insight-bios-name h2, .insight-bios-title {
+  position: relative;
+  text-align: center;
+  color: #03244d;
+}
+.insight-bios-email a, .insight-bios-email h3 {
+  text-align: center;
+  color: #cc4e0b;
+  font-weight: 600;
+}
+.insight-bios-phone a, .insight-bios-phone h3 {
+  text-align: center;
+  color: #03244d;
+  font-weight: 600;
+}
+.insight-bios-lower {
+  position: relative;
+  width: 100%;
+  margin-top: 1%;
+  background-color: #E1E1E1;
+  box-shadow: 0px -3px 7px #fff;
+}
+.col-3.biggio-content-sidebar {
+  position: relative;
+  float: left;
+  padding-right: 20px;
+}
+.biggio-content-sidebar-ul {
+  position: relative;
+  list-style: none;
+}
+.biggio-content-sidebar-li {
+  position: relative;
+  width: 14%;
+  height: auto;
+  font-size: 1vw;
+  padding-left: 1.5%;
+  display: inline-block;
+}
+.col-9.biggio-content-right {
+  position: relative;
+  float: right;
+}
+.placeholder-img {
+  position: relative;
+  height: 275px;
+  width: 100%;
+  background-color: #03244d;
+  float: left;
+}
+.placeholder-img-2 {
+  position: relative;
+  height: 275px;
+  width: 100%;
+  background-color: #03244d;
+  margin-bottom: 3%;
+}
+.col-12.placeholder-box {
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #03244d;
+  padding-top: 20px;
+}
+.col-3.content-image-place {
+  position: relative;
+  float: left;
+}
+.col-9.content-value-place {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+}
+.col-12.director-container {
+  position: relative;
+  display: block;
+  width: 100%;
+padding: 3% 0%;
+}
+.col-3.director-image {
+  position: relative;
+  display: block;
+  float: left;
+}
+.col-3.director-image img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px #03244d;
+}
+.col-8.director-content {
+  position: relative;
+  display: inline-block;
+  padding-left: 2%;
+}
+
+
+/* ------------------------------- Footer Styles --------------------------- */
+.col-12.footer-container {
+  display: block;
+  position: relative;
+  bottom: 0;
+  width: 100vw;
+  background-color: #03244d;
+  padding: 5vh 0vw;
+}
+
+.col-3.footer-logo {
+  display: inline-block;
+  position: relative;
+  width:20vw;
+  background-color: transparent;
+
+}
+
+.col-3.footer-contact-1 {
+  display: inline-block;
+  position: relative;
+  width:25vw;
+  background-color: transparent;
+  text-align: left;
+  color: #fff;
+}
+
+  .col-3.footer-contact-1 h4 {
+    margin-top: 1vh;
+  }
+ .col-3.footer-contact-1 hr:not([size]) {
+   color:#fff;
+   height: 2px;
+ }
+
+.col-3.footer-contact-2 {
+  display: inline-block;
+  position: relative;
+  width:25vw;
+  background-color: transparent;
+  text-align: left;
+  color:#fff;
+}
+
+  .col-3.footer-contact-2 h4 {
+    margin-top: 1vh;
+  }
+  .col-3.footer-contact-2 hr:not([size]) {
+  color:#fff;
+  height: 2px;
+  }
+
+  // --------------------------------------- AU Template Styles -----------------------------------//
+
+  @charset "utf-8";
+/* CSS Document */
+
+/* ADOBE FONTS */
+@import url("https://use.typekit.net/tli0wsh.css");
+
+/* BOOTSTRAP STYLING FOR AU */
+
+.carousel-caption {background-color: rgb(11,35,65,.85);}
+.accordion-button:not(.collapsed) {color:#0b2341; background-color:#e7e9ec;}
+
+.btn.btn-au-blight {background-color:#e7e9ec; color:#0b2341;}
+.btn.btn-au-blight:hover {background-color:#0b2341; color:#e7e9ec;}
+.btn.btn-au-blight:focus {background-color:#0b2341; color:#e7e9ec;}
+.btn.btn-au-bdark {background-color:#0b2341; color:#e7e9ec;}
+.btn.btn-au-bdark:hover {background-color:#e7e9ec; color:#0b2341;}
+.btn.btn-au-bdark:focus {background-color:#e7e9ec; color:#0b2341;}
+.btn.btn-au-boutline {border:1px solid #0b2341; color:#0b2341;}
+.btn.btn-au-boutline:hover {background-color:#0b2341; color:#e7e9ec;}
+.btn.btn-au-boutline:focus {background-color:#0b2341; color:#e7e9ec;}	
+.btn.btn-au-ooutline {border:1px solid #cc4e0b; color:#cc4e0b;}
+.btn.btn-au-ooutline:hover {background-color:#cc4e0b; color:#fff;}
+.btn.btn-au-ooutline:focus {background-color:#cc4e0b; color:#fff;}
+.btn.btn-au-odark {background-color:#cc4e0b; color:#fff;}
+.btn.btn-au-odark:hover {background-color:#fff; color:#cc4e0b;}
+.btn.btn-au-odark:focus {background-color:#fff; color:#cc4e0b;}
+
+/* CORE STYLE ELEMENTS */
+
+body {font-family: davis-sans, sans-serif; font-weight:300;}
+.skipto {z-index: 9999; position:absolute; border:1px solid #cc4e0b; font-weight:600; background-color:#fff; margin:1%; left:-10000px;}
+.skipto:focus {left:10px;}
+
+.row {--bs-gutter-x:0; --bs-gutter-y:0;}	
+
+.image img {width:100%;}	
+.to-top {position: fixed; bottom: 2%; right: 2%; display:none; z-index: 9;}
+.totop .to-top {display:block;}
+.totop .to-top .btn {background-color:#e7e9ec; color:#0b2341;}
+.totop .to-top:hover .btn {background-color:#cc4e0b; color:#fff;}
+p a {text-decoration:none; border-bottom:1px dashed #cc4e0b;}
+
+/* GDPR STYLING */
+
+#gdpr {display:none; position:fixed; bottom:0; left:0; right:0; z-index: 999;}
+#gdpr .alert {border-top:2px solid #fff; border-radius:0px; background-color: rgb(11,35,65,1); margin:0px; color:#fff; padding:1% 5%;}
+#gdpr .alert .gdpr-content .gdpr-title {font-family:sweet-sans-pro; font-weight:600;}
+#gdpr .alert .gdpr-content .gdpr-info {font-weight:300;}
+#gdpr .alert .gdpr-content .gdpr-info a {color:#eaeaea;}
+#gdpr .alert .gdpr-content .gdpr-info a:hover {color:#fff; border-bottom:1px dashed #fff;}
+#gdpr .alert .gdpr-button {text-align: center;}
+#gdpr .alert .gdpr-button button {padding: 2% 10%; background: none; border: 1px solid #fff;     color: #fff;}
+#gdpr .alert .gdpr-button button:hover {background-color:#eaeaea; color:#0b2341;}
+
+/* SITE HEADER */	
+
+.site-header {background-color:rgb(255,255,255,.9); border-bottom:2px solid #eaeaea; font-family: sweet-sans-pro,sans-serif; z-index: 9;}	
+.site-header .header-logo {padding:2%; text-align: center;}
+.site-header .header-logo img {width:90%;}
+.site-header .links {text-align: center; font-weight:700; font-size:.8em;}
+.site-header .links a {color:#0b2341; text-decoration: none;}
+.site-header.theme3 .links a {color:#fff; text-decoration: none;}
+
+.site-header .links a {position:relative;}
+.site-header .links a::after {content: ""; background: #cc4e0b; position:absolute; bottom:-3px; height:3px; width: 0%; left: 50%; transition:all .25s;}
+.site-header .links a:hover:after {content: ""; background: #cc4e0b; position:absolute; bottom:-3px; height:3px; width:50%; left:25%;}
+
+
+.site-header .links a:focus:after {content: ""; background: #cc4e0b; position:absolute; bottom:-3px; height:3px; width:50%; left:25%;}
+.site-header .links {padding:1% 0px; border-top:1px solid #e86100;}
+.site-header .links .nav-button {text-align: center; }
+
+.nav-toggle {text-align: center;}
+.nav-toggle button {background-color:rgb(255,255,255,.8); width:60%; transition: all .2s;}
+.nav-toggle button:hover {background-color:rgb(11,35,65,.8); color:#fff;}
+.nav-toggle button:focus {background-color:rgb(11,35,65,.8); color:#fff;}
+
+.navigation {font-family: sweet-sans-pro,sans-serif;}
+.navigation {background-image: url("https://www.auburn.edu/template/2022/_assets/images/navbg-samfordhall.jpg"); background-size: cover; background-position:center center;}
+.navigation .nav-level-1 > .column {padding:2%;}
+.navigation .nav-level-2 {padding:0px;}
+.navigation .col-title {font-size:1.3em; letter-spacing: 2px;
+font-weight: 700; margin-bottom:2%; color:#fff; text-transform: uppercase;}
+.navigation.modal .nav-links {margin:0% auto; padding: 3% 1%; border-top:1px solid #a1a1a1; width:100%; max-width:95%;}
+.navigation .nav-links li {list-style: none; margin:2% auto;}
+.navigation .audience-links {margin:2% auto; width:95%;}
+.navigation .audience-links, .navigation .resource-links {font-weight: 500; text-align: center;}
+.navigation .resource-links {margin:0% auto; text-align:center;}
+.navigation .links a {text-decoration: none;}
+.navigation .links a {color:#eaeaea;}
+.navigation .links a:hover, .navigation .links a:focus {border-bottom:1px solid #eaeaea; color:#f3b080;}
+.navigation .modal-header {border-bottom:0px;}
+.navigation .modal-dialog .modal-content {background: linear-gradient(121deg, rgba(0,0,0,.95) 0%, rgba(11,35,65,.95) 25%, rgba(11,35,65,.95) 75%, rgba(0,0,0,.95) 100%);}
+.navigation .logo {margin-left:2%;}
+.navigation .nav-close {margin: 0rem 0rem -0.5rem auto; background:none; border:0px;}
+.navigation .nav-close {color:#fff;}
+.navigation .nav-close:hover, .navigation .nav-close:focus {color:#f3b080;}
+
+.navigation.pushdown {border-bottom:1px solid #cc4e0b;}
+.navigation.pushdown .nav-links {padding:2% 5%;}
+.navigation.pushdown > .row {background: linear-gradient(121deg, rgba(0,0,0,.95) 0%, rgba(11,35,65,.95) 25%, rgba(11,35,65,.95) 75%, rgba(0,0,0,.95) 100%);}
+
+.search-pushdown .au-search-links {padding:2% 4%;}
+.search-pushdown .au-search-links a {text-align: center; text-decoration:none;}
+.search-pushdown .form-container {padding:2% 4%}
+.search-pushdown {background-color:#0b2341;}
+.search-pushdown .au-search-links a {text-align: center; color:#fff;}
+
+.au-search .modal-dialog {background-image: url("https://www.auburn.edu/template/2022/_assets/images/navbg-samfordhall.jpg"); background-size: cover; background-position:center center; z-index: 999;}
+.au-search .modal-dialog .modal-content {background: linear-gradient(121deg, rgba(0,0,0,.95) 0%, rgba(11,35,65,.95) 25%, rgba(11,35,65,.95) 75%, rgba(0,0,0,.95) 100%);}
+.au-search .nav-close {margin: 0rem 0rem -0.5rem auto; background:none; border:0px; color:#fff;}
+.au-search .au-search-links {}
+.au-search .au-search-links .col {text-align: center; padding:2%;}
+.au-search .au-search-links .col a {font-weight:600; color:#fff; text-decoration: none;}
+.au-search .au-search-links .col a:hover {color:#e86100;}
+.au-search .au-search-links .col a:focus {color:#e86100;}
+
+
+/* TITLE CONTAINER  */
+
+	/* Default Title Container */
+
+.title-container {border-bottom:2px solid #eaeaea; position:relative; background-color:#0b2341; overflow: hidden;}
+.title-container .content {min-height:15vh; padding:2% 10%; margin:2% auto; text-align: center;}
+.title-container .content p {font-weight:400;}
+.title-container.slider .content {min-height:auto; padding:0px;}
+.title-container .content .title {color:#fff; font-size:1.5em; font-weight:700; font-family: sweet-sans-pro,sans-serif; text-transform: uppercase; word-spacing: 5px;}
+.title-container .content .angle-right {position:absolute; top:0; bottom:0; right:0; width:35%;background:url("https://auburn.edu/template/2022/_assets/images/angle-right-white.png"); background-position:center center; background-size:cover; background-repeat: no-repeat; opacity: 0.4;}	
+.title-container .content .morecontent {margin:0px 0px; max-width:70%; padding:1% 0px; color:#fff; display:none;}
+
+	/* BlueBar Title Container */
+
+.title-bluebar.title-container .content {min-height:30vh;}
+.title-bluebar.title-container .content .title {position:absolute; left:0;bottom:0; background:rgb(11,35,65); width:100%; padding:.5% 0% .5% 10%; text-align: left; margin:0px; z-index:1;}
+.title-bluebar.title-container .content .morecontent {display:none;}
+
+
+.title-bluebar.title-container.slider .content {min-height:auto;}
+.title-bluebar.title-container.slider .content .angle-right {display:none;}
+.title-bluebar.title-container.slider .content .carousel .title {position:relative; text-align:center;}
+
+.title-bluebar.title-container.slider .content .carousel .carousel-item .carousel-caption {display:none;}
+.title-bluebar.title-container.slider .content .carousel .carousel-item .carousel-caption p {display:none;}
+
+
+	/* Feature Title Container */
+
+.title-feature.title-container {background-size:cover; background-position:center center; background-repeat: no-repeat;}
+.title-feature.title-container .content {background:rgb(11,35,65, 0.9);}
+.title-feature.title-container .content .title {position:inherit; background:none; width:auto; line-height: 1; padding: 2% 0px; margin:0px; border-bottom: 1px solid #e86100;}
+.title-feature.title-container .content .morecontent {}	
+.title-feature.title-container .content-feature-slant {background-size: cover; background-position:left center; background-repeat:no-repeat; position:absolute; top:0; bottom:0; left:40%; right:0; display:none;}
+
+
+/* PAGE CONTENT STYLING  */
+
+.section-header {text-transform:uppercase; font-weight:800; color:#0b2341; border-bottom:2px solid #e86100; padding-bottom:2%; position:relative; font-family: sweet-sans-pro,sans-serif; font-size:1.5em; word-spacing:3px;}
+h2.section-header {font-weight:800;}
+h3.section-header {font-weight:800; color:#cc4e0b; border-bottom:0px; font-size:1.2em;}
+h4.section-header {font-weight:800; color:#6E6E6E; border-bottom:0px; font-size:1em;}
+
+
+.sec-nav {padding:1.5% 8%; position:sticky; top:0px; z-index: 9; font-family: davis-sans, sans-serif; background-color:#e7e9ec;}
+.sec-nav .dropdown-item {white-space: normal; background-color:#e7e9ec;}
+.sec-nav .container-fluid {z-index: 1;}
+.sec-nav .navbar-brand {font-weight:800; font-family: sweet-sans-pro,sans-serif; text-transform: uppercase; font-size:.9em;}
+.sec-nav .btn {border:1px solid #000; color:#0b2341;}
+.sec-nav .btn:hover {border:1px solid #000; background-color:#cc4e0b; color:#fff;}
+.sec-nav .btn:focus {border:1px solid #000; background-color:#cc4e0b; color:#fff;}
+.sec-nav .navbar-nav {width:100%;}
+
+.breadcrumbs {padding:1% 0px; position:relative; font-family: davis-sans, sans-serif; display:none;}
+
+/* VERTICAL NAV */
+
+.vert-nav {}
+.vert-nav .nav {position:sticky; top:2%;}
+.vert-nav ul {background-color:#e7e9ec;}
+.vert-nav .btn {text-align: left; background:none;}
+.vert-nav a.nav-link {color:#0b2341;}
+.vert-nav a.nav-link:hover {color:#cc4e0b; background-color:#fff;}
+	
+@media (min-width:576px) {
+	
+}
+
+
+@media (min-width:768px) {
+	.vert-nav {margin:0% 4% 4% 0%;}
+	.collapse.dont-collapse-sm {display: block;	height: auto !important; visibility: visible;}
+}
+
+.page-content {position:relative;}
+.page-content .content_row {padding:1% 10%;}
+
+/* SITE FOOTER STYLING */
+
+.site-footer {position:relative; background-color:#0b2341; color:#fff;}
+.site-footer .content {}
+.site-footer a {color:#fff; text-decoration: none;}
+.site-footer li {margin: 1% auto;}
+.site-footer li a:hover {border-bottom:1px solid #fff;}
+.site-footer .content {padding:2%;}
+.site-footer .content .column {padding:2% 10%;}
+.site-footer .content .column .column-title {font-weight:600;}
+.site-footer .content .column ul {list-style: none; padding:0px;}
+.site-footer .social {background-color:#e7e9ec;}
+.site-footer .social .icons {padding:3%;}
+.site-footer .social .icons .item {text-align: center;}
+.site-footer .social .icons .item a {color:#0b2341;}
+.site-footer .social .icons .item a svg {color: #0b2341; transition: all .25s;}
+.site-footer .social .icons .item a:hover svg {color:#cc4e0b; transform:scale(1.5);}
+.site-footer .social .icons .item a:focus svg {color:#cc4e0b; transform:scale(1.5);}
+.site-footer .subrow {}
+.site-footer .subrow .column {padding:2% 10%;}
+.site-footer .subrow .column a {color:#eaeaea;}
+.site-footer .subrow .column a:hover {border-bottom:1px solid #fff;}
+
+/* STAFF LIST PAGE */
+
+.staff {}
+.staff .item {padding:3%;}
+.staff .item img {width:100%;}
+.staff .item a {text-decoration: none; color:#0b2341;}
+.staff .card {}
+.staff .card .card-body {}
+.staff .card .card-body .card-title {}
+.staff .card .card-body .card-title {}
+.staff .item .name {}
+.staff .item .title {}
+.staff .item .name {}
+
+/* STAFF BIO PAGE */
+
+.staff-bio {}
+.staff-bio {padding:1%;}
+.staff-bio .image img {width:100%;}
+.staff-bio .name {font-size:2em; font-weight:800; font-family: sweet-sans-pro,sans-serif;}
+.staff-bio .title {font-size:1.5em; font-weight:600; color:#cc4e0b;}
+.staff-bio .contact {margin:1% auto;}
+.staff-bio .info {margin:5% auto; font-size:1.1em;}
+
+
+@media (min-width:576px) {
+	.site-header {}
+	.site-header.fixed {position:fixed; background-color:#fff;}
+	/* .site-header .links {border-top:0px; margin:0px;} */
+	/* .nav-toggle button {width:100%; } */
+	.title-container .content {min-height:20vh;}
+	.title-container .content .title {font-size:2em;}
+}
+
+@media (min-width:768px) {		
+
+	h3.section-header {font-size:1.4em;}
+	h4.section-header {font-size:1.2em;}
+	.site-header .links {border-top:0px;}
+	.page-content .image {margin:0;}
+	.nav-toggle button {width:75%;}
+	.title-container .content {text-align: left;}
+	.title-container .content .morecontent {display:block;}
+	.title-container .content .morecontent p {  }
+	.navigation .audience-links {text-align: center;}
+	.navigation .audience-links, .navigation .resource-links {text-transform: uppercase;}
+	.nav-toggle {position:absolute; right:0; top:1%; z-index: 999; text-align: center;}
+		
+	
+	/* SECTION HEADERS */
+	.page-content.prebar h2.section-header, .page-content.prebar h1.section-header {border-bottom:0px;}
+	.page-content.prebar h2.section-header::before, .page-content.prebar h1.section-header::before {display: inline-block;position:absolute;top:0;bottom:0;right:101%;width:2000px;content: "";background: url("https://www.auburn.edu/template/2022/_assets/images/design-elements/3-lines-blue.png") no-repeat 0 0;background-size: contain;}
+
+	.page-content.pillars h2.section-header, .page-content.pillars h1.section-header  {border-bottom:0px;}
+	.page-content.pillars h2.section-header::before, .page-content.pillars h1.section-header::before {display: inline-block;position:absolute;top:0;bottom:0;left:-50px;width:40px;content: "";background: url("https://www.auburn.edu/template/2022/_assets/images/design-elements/3-lines.png") no-repeat 0 0;background-size: 100%;}
+
+	.page-content.bluebar h2.section-header, .page-content.bluebar h1.section-header {border-bottom:0px;}
+	.page-content.bluebar h2.section-header, .page-content.bluebar h1.section-header {
+	background: url(https://www.auburn.edu/template/2022/_assets/images/design-elements/3-lines-blue.png); background-size:cover; background-position:center right; background-repeat: no-repeat; padding:0.5%; color:#fff; border-bottom:0px;}
+
+	
+
+	.title-bluebar.title-container.slider .content .angle-right {display:block;}
+	.title-bluebar.title-container.slider .content .carousel .carousel-item .carousel-caption {display:block; bottom:0; left:0; right:0; padding:5px;}
+	
+	
+	.site-footer .social .icons {padding:2%;}
+	.site-footer .subrow {text-align: center;}
+	.site-footer .subrow a {font-size:.8em;}
+}
+
+@media (min-width:992px) {
+	.navigation .nav-level-1 {display:inherit;}
+	.site-header .links {font-size:1em;}
+	.section-header {padding-bottom:1%;}
+	.breadcrumbs {display:block;}
+	.title-container .content .morecontent {text-align: left; margin:0px; padding:1% 0px;}
+	.title-feature.title-container {background-size: cover; background-position: center right;}
+	.title-feature.title-container .content {background:rgb(11,35,65);  min-height:45vh;}
+	.title-feature.title-container .content .title {text-align: left; line-height: 1; padding: 2% 0px;}
+	.title-feature.title-container .content .morecontent {text-align: left; max-width: 35%;}
+	.title-feature.title-container .content-feature-slant {display:block; background-size: cover;}
+	.title-feature.title-container .content-feature-slant .slant-container {position:absolute; top:0; bottom:0; left:0; right:50%; background:url("https://www.auburn.edu/template/2022/_assets/images/design-elements/title-area-slant.png"); background-size:cover;}
+	.title-bluebar.title-container .content {min-height:45vh;}
+	.page-content.arrow-top {background:url("https://auburn.edu/template/2022/_assets/images/design-elements/arrow-top.jpg"); background-position:bottom right; background-repeat: no-repeat; background-size:20%; background-position: left 0% top 5%;}
+	.page-content.arrow-bottom {background:url("https://auburn.edu/template/2022/_assets/images/design-elements/arrow-bottom.jpg"); background-position:bottom right; background-repeat: no-repeat; background-size:35%; background-position: right 5% bottom 0%;}
+	.site-footer .social .icons {padding:1%; margin:0px 20%;}
+}	
+
+@media (min-width:1200px) {
+	.site-header .header-logo {padding:1%;}
+	.nav-toggle {top:.5%;}
+	.nav-toggle button {width:65%; padding:5px 10px 2px 10px; font-size:.85em;}
+	.sec-nav .navbar-nav .nav-item .nav-link {color: #0b2341; border-right: 1px solid #0b2341;
+	padding: 0% 0.75rem;}
+	.sec-nav .navbar-nav .nav-item:last-child .nav-link {border-right:0px;}
+	.title-container .content {min-height:35vh; padding:0px 10%;}
+	.title-container .content .morecontent {max-width:75%;}
+	.title-bluebar.title-container .content {min-height:50vh;}
+	.title-feature.title-container .content .morecontent {max-width: 35%;}
+	.navigation .nav-level-1 > .column {padding:3%;}
+	.section-header {padding-bottom:.5%;}
+	.site-footer .content {max-width:85%; margin:2% auto 0% auto;}
+	.site-footer .social .icons {margin:0px 30%;}
+}
+
+@media (min-width:1400px) {
+	.navigation .nav-links .nav-level-1 .col-title {margin-bottom:10%;}
+	.nav-toggle {position:fixed;}
+	.nav-toggle button {width:55%; padding:0px 10px 0px 10px; font-size:.75em;}
+	.nav-toggle2 {position:absolute;}
+	.title-feature.title-container .content {}
+	.title-feature.title-container .content-feature-slant {left:50%; width:auto;}
+	.title-bluebar.title-container .content {min-height:55vh;}
+	.site-footer .content {padding:0%; border-bottom:1px solid #e86100;}
+	.site-footer .content .column {padding:1% 2%;}
+	.site-footer .logo img {width:70%;}
+	.sec-nav .image-brand {position:absolute; top: 0; bottom: 0; left: 0; right: 0; background: url(https://auburn.edu/template/2016/_assets/images/au_logos/au_blue.png); background-repeat: no-repeat; background-attachment: fixed; background-size: 4%; background-position-x: 2%;}
+}	
+
+
+@media print {
+	.title-container .content {min-height:0vh;}
+	.title-bluebar.title-container .content {min-height:0vh;}
+	.title-feature.title-container .content {min-height:15vh;}
+
+	h2, h3, h4 {color:#000;}
+}
+
