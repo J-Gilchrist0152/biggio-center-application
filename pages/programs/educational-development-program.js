@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import { Image } from '@chakra-ui/react'
-import styles from '../styles/Home.module.css'
-import bootstrap from './components/bootStrap'
 import EdBanner from '../graphics/EducationalDevelopment'
 import Link from 'next/link'
 import { gql, GraphQLClient } from 'graphql-request'

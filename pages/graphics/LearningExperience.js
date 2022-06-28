@@ -3,7 +3,7 @@ import Image from 'next/image'
 function LearningBanner() {
   return <Image 
   className='main-banner'
-  src="/_assets/page-headers/Learning Experience.png" 
+  src="/_assets/page-headers/Learning Experience Design.png" 
   alt="Learning Experience & Design Banner" 
   layout="responsive"
   width={500}

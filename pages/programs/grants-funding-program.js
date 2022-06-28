@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import { Image } from '@chakra-ui/react'
-import styles from '../styles/Home.module.css'
-import bootstrap from './components/bootStrap'
 import Link from 'next/link'
 import { gql, GraphQLClient } from 'graphql-request'
 import GrantsBanner from '../graphics/GrantsFunding'
@@ -13,7 +11,7 @@ const GrantsFundingDesign = ({ posts  }) => {
       
     <div id="main-container" className="col-12 auburn-online-container">
         <GrantsBanner/>
-        <Navbar/>
+        <NavBar/>
         <div className='col-12 insight-bios-container'>
         {posts.map(post => {
           return (
