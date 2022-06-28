@@ -25,56 +25,12 @@ const Header = () => {
                 <div className="site-header" role="banner" aria-label="Site header">
                     <div className="row align-items-center">
                         <div className="col-9 col-sm-4 col-md-5 col-xl-4 image header-logo">
-                            <a href="">
-                                <Image
-                                    src="https://www.auburn.edu/academic/provost/2022-template/_assets/unit-logos/biggio-center/bc_informal_h_fullcolor.png"
-                                    alt="Biggio Center Informal Logo"
-                                    width={500}
-                                    height={500}
-                                    className="d-print-none"
-                                />
-                                 <Image
-                                    src="https://www.auburn.edu/academic/provost/2022-template/_assets/unit-logos/biggio-center/bc_informal_h_onecolor_black.png"
-                                    alt="Biggio Center Informal Black Logo"
-                                    width={500}
-                                    height={500}
-                                    className="d-none d-print-block"
-                                />
-                            </a>
-                        </div>	
-                        <div className="col-3 col-sm-1 nav-toggle d-print-none">
-                            <button type="button" id="nav_btn_modal" className="btn" data-bs-toggle="modal" data-bs-target="#au_navigation"><div className="visually-hidden">Toggle site navigation</div>
-                                <div className="col">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-                                    <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>	
-                                </div>	
-                            
-                                <div className="col text">
-                                    <span className="d-none d-xl-block">Menu</span>
-                                </div>	
-                            </button>
-                            <button type="button" id="nav_btn_push" className="btn visually-hidden" data-bs-toggle="collapse" data-bs-target="#au_navigation2"><div className="visually-hidden">Toggle site navigation</div>
-                                <div className="col">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-                                    <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>	
-                                </div>	
-                            
-                                <div className="col text">
-                                    <span className="d-none d-xl-block">Menu</span>
-                                </div>	
-                            </button>
-                        </div>
-                        <div className="col-3 col-sm-1 nav-toggle nav-toggle2 d-print-none">
-                            <button type="button" id="nav_btn_push" className="btn visually-hidden" data-bs-toggle="collapse" data-bs-target="#au_navigation2"><div className="visually-hidden">Toggle site navigation</div>
-                                <div className="col">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" fill="currentColor" className="bi bi-list" viewBox="0 0 16 16">
-                                    <path fillRule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>	
-                                </div>	
-                            
-                                <div className="col text">
-                                    <span className="d-none d-xl-block">Menu</span>
-                                </div>	
-                            </button>
+                            <div className="header-logo">
+                                <a href="">
+                                    <img src="/_assets/logos/bc_informal_h_fullcolor.png" className="d-print-none" alt="Biggio Center Informal Logo"/> 
+				                    <img src="/_assets/logos/bc_informal_H_onecolor_black.png" alt="Biggio Center Informal Logo Black" className="d-none d-print-block"/>	
+                                </a>
+                            </div>
                         </div>	
                         <div className="col-sm-3"></div>
                         <div className="row col-12 col-sm-5 links align-items-center d-print-none">

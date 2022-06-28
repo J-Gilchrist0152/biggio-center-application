@@ -683,9 +683,9 @@ p a {text-decoration:none; border-bottom:1px dashed #cc4e0b;}
 
 /* SITE HEADER */	
 
-.site-header {background-color:rgb(255,255,255,.9); border-bottom:2px solid #eaeaea; font-family: sweet-sans-pro,sans-serif; z-index: 9;}	
+.site-header {background-color:rgb(255,255,255); border-bottom:2px solid #eaeaea; font-family: sweet-sans-pro,sans-serif; z-index: 9;}	
 .site-header .header-logo {padding:2%; text-align: center;}
-.site-header .header-logo img {width:90%;}
+.site-header .header-logo img {width:60%;}
 .site-header .links {text-align: center; font-weight:700; font-size:.8em;}
 .site-header .links a {color:#0b2341; text-decoration: none;}
 .site-header.theme3 .links a {color:#fff; text-decoration: none;}
@@ -974,3 +974,12 @@ h4.section-header {font-weight:800; color:#6E6E6E; border-bottom:0px; font-size:
 	h2, h3, h4 {color:#000;}
 }
 
+svg.bi.bi-facebook, svg.bi.bi-twitter,svg.bi.bi-instagram,svg.bi.bi-linkedin,svg.bi.bi-tiktok {
+  transform:scale(1);
+  transition: transform .25s;
+}
+
+svg.bi.bi-facebook:hover, svg.bi.bi-twitter:hover,svg.bi.bi-instagram:hover,svg.bi.bi-linkedin:hover,svg.bi.bi-tiktok:hover {
+  transform:scale(1.5);
+  transition: transform .25s;
+}
