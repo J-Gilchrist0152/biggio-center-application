@@ -5,6 +5,7 @@ import bootStrap from './services/bootStrap'
 import MainBanner from './graphics/MainBannerGraphic'
 import Link from 'next/link'
 import { ApolloClient,gql, InMemoryCache } from '@apollo/client'
+import NavBar from './components/_includes/NavBar'
 
 export default function Home(results) {
   return (
@@ -21,6 +22,7 @@ export default function Home(results) {
                 </form>
               </div>
             </div>
+            <NavBar></NavBar>
             <div className="biggio-content-wrapper">
               <h2 className="home-page-content-sub-heading">Biggio Mission Statement</h2>
               <p className="content-value values">We bring together the people, ideas, and services that enable Auburn’s teaching community to prepare our graduates to be creative problem solvers in a global economy. Our diverse units offer programming and support to faculty, instructional staff, and graduate teaching assistants. </p>
