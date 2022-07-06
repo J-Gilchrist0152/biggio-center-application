@@ -36,13 +36,18 @@ export async function getStaticProps() {
   const { posts } = await graphcms.request(
     `
     {
-      posts(where: {tags_contains_all: "educational"}) {
+      posts(where: {tags_contains_all: "educational-development"}) {
         title
-        slug
-        tags
-        content
-        date
-        description
+          slug
+          description
+          mainContent {
+            html
+            markdown
+            raw
+            text
+          }
+          tags
+          contentWeight
       }
     }
     `
