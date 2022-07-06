@@ -9,19 +9,20 @@ const InstructionalTechnology = ({ posts  }) => {
     return (  
 
       
-    <div id="main-container" className="col-12 auburn-online-container">
+    <div id="main-container" className="col-12 program-wrapper">
         <InstBanner/>
         <NavBar/>
-        <div className='col-12 insight-bios-container'>
-        {posts.map(post => {
-          return (
-            <div className='col-4 program-list' key={post.title}>
-                <h1>{post.title}</h1>
-                <h3>{post.date}</h3>
-                <h3>{post.description}</h3>
-            </div>
-          );
-        })}
+        <div className='col-12 program-container'>
+          {posts.map( post => {
+            return (
+              <a href={post.slug}>
+                <div className='col-4 program-list' key="i">
+                    <h1 className="program-title">{post.title}</h1>
+                    <h3 className="program-description">{post.description}</h3>
+                </div>
+              </a>
+            );
+          })}
         </div>
     </div>
     )
