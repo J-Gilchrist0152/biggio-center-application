@@ -39,12 +39,6 @@ export async function getStaticProps() {
         title
           slug
           description
-          mainContent {
-            html
-            markdown
-            raw
-            text
-          }
           tags
           contentWeight
       }
