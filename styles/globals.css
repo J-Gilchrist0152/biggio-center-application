@@ -1068,3 +1068,8 @@ li.ais-Hits-item {
   left:13%;
   text-align: center;
 }
+
+.post-title {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}

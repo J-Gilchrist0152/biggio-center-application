@@ -66,8 +66,10 @@ import SlugBanner from '../graphics/SlugHeader.js';
     <React.Fragment>
       <SlugBanner/>
       <NavBar/>
-      <h1>{post.title}</h1>
-      <RichText content={post.mainContent.raw.children}/>
+      <div className='biggio-content-wrapper'>
+        <h1 className='post-title'>{post.title}</h1>
+        <RichText content={post.mainContent.raw.children}/>
+      </div>
     </React.Fragment>
   );
 
