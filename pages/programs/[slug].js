@@ -71,4 +71,4 @@ import SlugBanner from '../graphics/SlugHeader.js';
     </React.Fragment>
   );
 
-  export default SlugFunction
+  export default SlugFunction;
