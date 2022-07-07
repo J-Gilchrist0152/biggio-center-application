@@ -1046,15 +1046,14 @@ li.ais-Hits-item {
 .ais-SearchBox-input {
   position: relative;
   padding: .5rem;
-  width: 25rem;
-  left: 8rem;
-  top:.5rem;
+  width: 50%;
+  left: 22%;
 }
 
 .ais-SearchBox-submit {
   position: relative;
-  left: 8rem;
-  top: 0.45rem;
+  left: 22%;
+  bottom: .09rem;
   background-color: rgb(206,211,217);
   padding: 0.95rem;
 }
