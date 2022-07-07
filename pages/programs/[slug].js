@@ -2,6 +2,7 @@ import React from 'react'
 import { GraphQLClient } from 'graphql-request'
 import { RichText } from '@graphcms/rich-text-react-renderer';
 import NavBar from '../components/_includes/NavBar';
+import SlugBanner from '../graphics/SlugHeader.js';
 
   export async function getStaticProps({ params }) {
     const graphcms = new GraphQLClient(
@@ -63,6 +64,7 @@ import NavBar from '../components/_includes/NavBar';
 
   export default ({ post }) => (
     <React.Fragment>
+      <SlugBanner/>
       <NavBar/>
       <h1>{post.title}</h1>
       <RichText content={post.mainContent.raw.children}/>

@@ -566,6 +566,43 @@ padding: 3% 0%;
   padding-left: 2%;
 }
 
+/* ------------------------------- Program Styles --------------------------*/
+
+.col-12.program-container {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.col-10.program-page {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  border: 1rem solid #000;
+}
+
+.col-4.program-list {
+  display: inline-block;
+  position: relative;
+  padding: 2rem;
+  border: .5rem solid rgb(11,35,65);
+  border-radius: .5rem;
+  margin: 2rem;
+  width:30%
+}
+
+h1.program-title {
+  font-size: 1.5rem;
+  padding: 0 0 1rem 0;
+}
+
+h3.program-date {
+  font-size: .75rem;
+  padding: 0 0 1rem 0;
+}
 
 /* ------------------------------- Footer Styles --------------------------- */
 .col-12.footer-container {
@@ -978,4 +1015,46 @@ svg.bi.bi-facebook:hover, svg.bi.bi-twitter:hover,svg.bi.bi-instagram:hover,svg.
 
 li.nav-item:hover {
   text-decoration:underline;
+}
+
+ol.ais-Hist-list {
+  list-style: none;
+}
+
+li.ais-Hits-item {
+  display: inline-block;
+  list-style: none;
+  width: 31%;
+  margin: 2rem 1rem;
+}
+
+.col-4.program-list-search {
+  border: .25rem solid rgb(11,35,65);
+  border-radius: 1rem;
+  width: 100%;
+  min-height: 10rem;
+  padding: 3rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.col-10.search-results-container {
+  display: block;
+  position: relative;
+  width:100%;
+}
+
+.ais-SearchBox-input {
+  position: relative;
+  padding: .5rem;
+  width: 25rem;
+  left: 8rem;
+  top:.5rem;
+}
+
+.ais-SearchBox-submit {
+  position: relative;
+  left: 8rem;
+  top: 0.45rem;
+  background-color: rgb(206,211,217);
+  padding: 0.95rem;
 }

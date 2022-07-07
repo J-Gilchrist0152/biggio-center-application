@@ -8,20 +8,28 @@ import NavBar from './components/_includes/NavBar'
 import algoliasearch from 'algoliasearch/lite';
 import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-hooks-web';
 import { gql, GraphQLClient } from 'graphql-request'
+import { useState } from 'react'
 
 const searchClient = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY);
+
+
 
 function Hit({ hit }) {
   return (
     <a href={`/programs/${hit.slug}`}>
-      <div className='col-4 program-list' key="i">
+      <div className='row'>
+      <div className='col-4 program-list-search' key="i">
         <h1 className="program-title">{hit.title}</h1>
+      </div>
       </div>
     </a>
   );
 }
 
 export default function Home() {
+
+  const [showHits, setShowHits] = useState(false);
+
   return (
       <div id="main-container" className="filter-container">
         <h1 className="sr-only">Biggio Center Website</h1>
@@ -31,13 +39,19 @@ export default function Home() {
               <MainBanner></MainBanner>
               <div className="biggio-search">
                 <div className="right-panel">
-                  <SearchBox />
+                  <SearchBox 
+                    onFocus={() => setShowHits(true)}
+                    onBlur={() => setShowHits(false)}
+                  />
                 </div>
       
               </div>
             </div>
             <NavBar></NavBar>
             <div className="biggio-content-wrapper">
+              <div className='col-10 search-results-container'>
+              {showHits ? <Hits hitComponent={Hit} /> : null}
+              </div>
               <h2 className="home-page-content-sub-heading">Biggio Mission Statement</h2>
               <p className="content-value values">We bring together the people, ideas, and services that enable Auburn’s teaching community to prepare our graduates to be creative problem solvers in a global economy. Our diverse units offer programming and support to faculty, instructional staff, and graduate teaching assistants. </p>
               <div className="col-12 units-container filter"> 
@@ -81,7 +95,6 @@ export default function Home() {
               </div>
               <div className="col-12 events-cal">
                 <h2 className="home-page-content-sub-heading">Upcoming Events</h2>
-                <Hits hitComponent={Hit} />
               </div>
             </div>
           </div>
