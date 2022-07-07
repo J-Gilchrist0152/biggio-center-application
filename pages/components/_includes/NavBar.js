@@ -23,18 +23,18 @@ const NavBar = () => {
                 </li>   
                 <li className="nav-item">
                 <Link href="">
-                    <a id="whoDropdown" className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Who We Are</a>
+                    <a id="whoDropdown" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Who We Are</a>
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="whoDropdown">
-                    <li><Link href="../"><a className="dropdown-item" href="#">Mission Statement</a></Link></li>
-                    <li><Link href="../"><a className="dropdown-item" href="#">Auburn Online</a></Link></li>
-                    <li><Link href="../"><a className="dropdown-item" href="#">Biggio Tech</a></Link></li>
-                    <li><Link href="../"><a className="dropdown-item" href="#">Teaching Services</a></Link></li>
-                    <li><Link href="../"><a className="dropdown-item" href="#">Testing Services</a></Link></li>
+                    <li><Link href="/about/MissionStatement"><a className="dropdown-item">Mission Statement</a></Link></li>
+                    <li><Link href="/about/AuburnOnline"><a className="dropdown-item" >Auburn Online</a></Link></li>
+                    <li><Link href="/about/BiggioAdmin"><a className="dropdown-item" >Biggio Admin</a></Link></li>
+                    <li><Link href="/about/BiggioTech"><a className="dropdown-item" >Biggio Tech</a></Link></li>
+                    <li><Link href="/about/TestingServices"><a className="dropdown-item" >Testing Services</a></Link></li>
                 </ul>
                 </li>  
                 <li className="nav-item ">
-                <a id="programDropdown" className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a id="programDropdown" className="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     What We Offer
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="programDropdown">
