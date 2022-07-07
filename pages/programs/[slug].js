@@ -62,7 +62,7 @@ import SlugBanner from '../graphics/SlugHeader.js';
     };
   }
 
-  export default ({ post }) => (
+  const SlugFunction = ({ post }) => (
     <React.Fragment>
       <SlugBanner/>
       <NavBar/>
@@ -70,3 +70,5 @@ import SlugBanner from '../graphics/SlugHeader.js';
       <RichText content={post.mainContent.raw.children}/>
     </React.Fragment>
   );
+
+  export default SlugFunction
