@@ -56,45 +56,82 @@ export default function Home() {
               <p className="content-value values">We bring together the people, ideas, and services that enable Auburn’s teaching community to prepare our graduates to be creative problem solvers in a global economy. Our diverse units offer programming and support to faculty, instructional staff, and graduate teaching assistants. </p>
               <div className="col-12 units-container filter"> 
                 <a href="/programs/educational-development-program">
-                  <div className="col-4 units-box ub-2">
-                    <p className="unit-box-text"> Educational <br/>
-                      Development <br/>
-                      &nbsp;</p>
+                  <div className="col-4 units-box top">
+                  <Image 
+                      className='unit-icons'
+                      src="/_assets/icons/Educational development2.png" 
+                      alt="" 
+                      layout="responsive"
+                      width={500}
+                      height={250}
+                    /> 
                   </div>
                 </a> 
                 <a href="/programs/professional-development-program">
-                  <div className="col-4 units-box ub-1">
-                    <p className="unit-box-text"> Professional Development Programs <br />
-                      &nbsp;</p>
+                  <div className="col-4 units-box top">
+                  <Image 
+                      className='unit-icons'
+                      src="/_assets/icons/Professional Development Programs.png" 
+                      alt="" 
+                      layout="responsive"
+                      width={500}
+                      height={250}
+                    />  
                   </div>
                 </a> 
                 <a href="/programs/grants-funding-program">
-                  <div className="col-4 units-box ub-3">
-                    <p className="unit-box-text"> Grant & Funding Opportunites <br />
-                      &nbsp;</p>
+                  <div className="col-4 units-box top">
+                  <Image 
+                      className='unit-icons'
+                      src="/_assets/icons/Grants and Funding Opportunities2.png" 
+                      alt="" 
+                      layout="responsive"
+                      width={500}
+                      height={250}
+                    />
                   </div>
                 </a>
                 <div className="clearfix"></div>
                 <a href="/programs/testing-services-program">
-                  <div className="col-4 units-box ub-4 ">
-                    <p className="unit-box-text ub-box-text-btm">Testing <br />
-                      Services</p>
+                  <div className="col-4 units-box bottom">
+                  <Image 
+                      className='unit-icons'
+                      src="/_assets/icons/Testing Services.2png.png" 
+                      alt="" 
+                      layout="responsive"
+                      width={500}
+                      height={250}
+                    />
                   </div>
                 </a> 
                 <a href="/programs/instructional-technology-programs">
-                  <div className="col-4 units-box ub-5">
-                    <p className="unit-box-text ub-box-text-btm">Instructional <br />
-                      Technology </p>
+                  <div className="col-4 units-box bottom">
+                  <Image 
+                      className='unit-icons'
+                      src="/_assets/icons/Instructional Technology.png" 
+                      alt="" 
+                      layout="responsive"
+                      width={500}
+                      height={250}
+                    />
                   </div>
                 </a> 
                 <a href="/programs/learning-experience-design">
-                  <div className="col-4 units-box ub-6">
-                    <p className="unit-box-text ub-box-text-btm">Learning Experience Design</p>
+                  <div className="col-4 units-box bottom">
+                    <Image 
+                      className='unit-icons'
+                      src="/_assets/icons/Learning Experience Design.png" 
+                      alt="" 
+                      layout="responsive"
+                      width={500}
+                      height={250}
+                    />
                   </div>
                 </a>
               </div>
               <div className="col-12 events-cal">
                 <h2 className="home-page-content-sub-heading">Upcoming Events</h2>
+                <Hits hitComponent={Hit} />
               </div>
             </div>
           </div>

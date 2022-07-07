@@ -290,11 +290,11 @@ p.content-value.values {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.col-4.units-box.ub-1:hover, .col-4.units-box.ub-2:hover, .col-4.units-box.ub-3:hover {
+.col-4.units-box.top:hover, .col-4.units-box.top:focus {
   transform: translateY(-20px);
   transition: .5s;
 }
-.col-4.units-box.ub-4:hover, .col-4.units-box.ub-5:hover, .col-4.units-box.ub-6:hover {
+.col-4.units-box.bottom:hover, .col-4.units-box.bottom:focus {
   transform: translateY(20px);
   transition: .5s;
 }
