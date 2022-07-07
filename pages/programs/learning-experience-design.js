@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import { Image } from '@chakra-ui/react'
-import styles from '../styles/Home.module.css'
-import bootstrap from './components/bootStrap'
 import Link from 'next/link'
 import NavBar from '../components/_includes/NavBar'
 import { gql, GraphQLClient } from 'graphql-request'
@@ -39,13 +37,12 @@ export async function getStaticProps() {
   const { posts } = await graphcms.request(
     `
     {
-      posts(where: {tags_contains_all: "professional"}) {
+      posts(where: {tags_contains_all: "learning-experience-design"}) {
         title
-        slug
-        tags
-        content
-        date
-        description
+          slug
+          description
+          tags
+          contentWeight
       }
     }
     `

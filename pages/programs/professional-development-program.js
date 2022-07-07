@@ -1,29 +1,29 @@
 import Head from 'next/head'
 import { Image } from '@chakra-ui/react'
-import styles from '../styles/Home.module.css'
-import bootstrap from './components/bootStrap'
 import ProfBanner from '../graphics/ProfessionalDevelopment'
 import Link from 'next/link'
 import { gql, GraphQLClient } from 'graphql-request'
 import Navbar from '../components/_includes/NavBar'
 
+
 const ProfessionalDevelopment = ({ posts  }) => {
     return (  
 
       
-    <div id="main-container" className="col-12 auburn-online-container">
+    <div id="main-container" className="col-12 program-wrapper">
         <ProfBanner/>
         <Navbar/>
-        <div className='col-12 insight-bios-container'>
-        {posts.map(post => {
-          return (
-            <div className='col-4 program-list' key={post.title}>
-                <h1>{post.title}</h1>
-                <h3>{post.date}</h3>
-                <h3>{post.description}</h3>
-            </div>
-          );
-        })}
+        <div className='col-12 program-container'>
+          {posts.map( post => {
+            return (
+              <a href={post.slug}>
+                <div className='col-4 program-list' key={post.id}>
+                    <h1 className="program-title">{post.title}</h1>
+                    <h3 className="program-description">{post.description}</h3>
+                </div>
+              </a>
+            );
+          })}
         </div>
     </div>
     )
@@ -37,18 +37,17 @@ export async function getStaticProps() {
   const { posts } = await graphcms.request(
     `
     {
-      posts(where: {tags_contains_all: "professional"}) {
+      posts(where: {tags_contains_all: "professional-development"}) {
         title
-        slug
-        tags
-        content
-        date
-        description
+          slug
+          description
+          tags
+          contentWeight
       }
     }
     `
   );
-
+  
   return {
     props: {
       posts,

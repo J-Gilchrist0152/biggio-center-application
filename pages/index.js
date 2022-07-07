@@ -4,10 +4,32 @@ import styles from '../styles/Home.module.css'
 import bootStrap from './services/bootStrap'
 import MainBanner from './graphics/MainBannerGraphic'
 import Link from 'next/link'
-import { ApolloClient,gql, InMemoryCache } from '@apollo/client'
 import NavBar from './components/_includes/NavBar'
+import algoliasearch from 'algoliasearch/lite';
+import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-hooks-web';
+import { gql, GraphQLClient } from 'graphql-request'
+import { useState } from 'react'
 
-export default function Home(results) {
+const searchClient = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, process.env.NEXT_PUBLIC_ALGOLIA_SEARCH_API_KEY);
+
+
+
+function Hit({ hit }) {
+  return (
+    <a href={`/programs/${hit.slug}`}>
+      <div className='row'>
+      <div className='col-4 program-list-search' key="i">
+        <h1 className="program-title">{hit.title}</h1>
+      </div>
+      </div>
+    </a>
+  );
+}
+
+export default function Home() {
+
+  const [showHits, setShowHits] = useState(false);
+
   return (
       <div id="main-container" className="filter-container">
         <h1 className="sr-only">Biggio Center Website</h1>
@@ -16,87 +38,103 @@ export default function Home(results) {
             <div className="home-page-banner-graphic"> 
               <MainBanner></MainBanner>
               <div className="biggio-search">
-                <form className="d-flex">
-                  <input className="form-control me-2" id="search_field" type="search" placeholder="Currently Under Development" aria-label="Search"/>
-                  <button className="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                <div className="right-panel">
+                  <SearchBox 
+                    onFocus={() => setShowHits(true)}
+                    onBlur={() => setShowHits(false)}
+                  />
+                </div>
+      
               </div>
             </div>
             <NavBar></NavBar>
             <div className="biggio-content-wrapper">
+              <div className='col-10 search-results-container'>
+              {showHits ? <Hits hitComponent={Hit} /> : null}
+              </div>
               <h2 className="home-page-content-sub-heading">Biggio Mission Statement</h2>
               <p className="content-value values">We bring together the people, ideas, and services that enable Auburn’s teaching community to prepare our graduates to be creative problem solvers in a global economy. Our diverse units offer programming and support to faculty, instructional staff, and graduate teaching assistants. </p>
-              <div className="col-12 units-container filter"> <a data-filter="educational-development" href="#">
-                <div className="col-4 units-box ub-2">
-                  <p className="unit-box-text"> Educational <br/>
-                    Development <br/>
-                    &nbsp;</p>
-                </div>
-                </a> <a data-filter="professional-development" href="#">
-                <div className="col-4 units-box ub-1">
-                  <p className="unit-box-text"> Professional Development Programs <br />
-                    &nbsp;</p>
-                </div>
-                </a> <a data-filter="grant-funding" href="#">
-                <div className="col-4 units-box ub-3">
-                  <p className="unit-box-text"> Grant & Funding Opportunites <br />
-                    &nbsp;</p>
-                </div>
+              <div className="col-12 units-container filter"> 
+                <a href="/programs/educational-development-program">
+                  <div className="col-4 units-box top">
+                  <Image 
+                      className='unit-icons'
+                      src="/_assets/icons/Educational development2.png" 
+                      alt="" 
+                      layout="responsive"
+                      width={500}
+                      height={250}
+                    /> 
+                  </div>
+                </a> 
+                <a href="/programs/professional-development-program">
+                  <div className="col-4 units-box top">
+                  <Image 
+                      className='unit-icons'
+                      src="/_assets/icons/Professional Development Programs.png" 
+                      alt="" 
+                      layout="responsive"
+                      width={500}
+                      height={250}
+                    />  
+                  </div>
+                </a> 
+                <a href="/programs/grants-funding-program">
+                  <div className="col-4 units-box top">
+                  <Image 
+                      className='unit-icons'
+                      src="/_assets/icons/Grants and Funding Opportunities2.png" 
+                      alt="" 
+                      layout="responsive"
+                      width={500}
+                      height={250}
+                    />
+                  </div>
                 </a>
                 <div className="clearfix"></div>
-                <a data-filter="testing-service" href="#">
-                <div className="col-4 units-box ub-4 ">
-                  <p className="unit-box-text ub-box-text-btm">Testing <br />
-                    Services</p>
-                </div>
-                </a> <a data-filter="instructional-tech" href="#">
-                <div className="col-4 units-box ub-5">
-                  <p className="unit-box-text ub-box-text-btm">Instructional <br />
-                    Technology </p>
-                </div>
-                </a> <a data-filter="learning-experience" href="#">
-                <div className="col-4 units-box ub-6">
-                  <p className="unit-box-text ub-box-text-btm">Learning Experience Design</p>
-                </div>
+                <a href="/programs/testing-services-program">
+                  <div className="col-4 units-box bottom">
+                  <Image 
+                      className='unit-icons'
+                      src="/_assets/icons/Testing Services.2png.png" 
+                      alt="" 
+                      layout="responsive"
+                      width={500}
+                      height={250}
+                    />
+                  </div>
+                </a> 
+                <a href="/programs/instructional-technology-programs">
+                  <div className="col-4 units-box bottom">
+                  <Image 
+                      className='unit-icons'
+                      src="/_assets/icons/Instructional Technology.png" 
+                      alt="" 
+                      layout="responsive"
+                      width={500}
+                      height={250}
+                    />
+                  </div>
+                </a> 
+                <a href="/programs/learning-experience-design">
+                  <div className="col-4 units-box bottom">
+                    <Image 
+                      className='unit-icons'
+                      src="/_assets/icons/Learning Experience Design.png" 
+                      alt="" 
+                      layout="responsive"
+                      width={500}
+                      height={250}
+                    />
+                  </div>
                 </a>
               </div>
               <div className="col-12 events-cal">
                 <h2 className="home-page-content-sub-heading">Upcoming Events</h2>
-            <div className="placeholder-img-2"></div>
               </div>
             </div>
           </div>
           </div>
         </div>
   )
-}
-
-export async function getStaticProps() {
-  const client = new ApolloClient({
-    uri: "https://api-us-east-1.graphcms.com/v2/ckzekoep138iw01z59a8p5x42/master",
-    cache: new InMemoryCache(),
-  });
-
-  const { data: auburnOnlines } = await client.query({
-    query: gql`
-    query MyQuery {
-      auburnOnlines {
-        profileImage {
-          id
-          url
-        }
-        name
-        positionTitle
-        email
-        phoneNumber
-      }
-    }
-    `,
-  });
-
-  return {
-    props: {
-      auburnOnlines
-    },
-  };
 }
