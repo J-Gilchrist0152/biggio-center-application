@@ -1049,7 +1049,7 @@ li.ais-Hits-item {
   border: 0.15rem solid rgb(11,35,65);
 }
 
-.ais-SearchBox-submit {
+.ais-SearchBox-submit, .ais-SearchBox-reset {
   position: relative;
   left: 22%;
   bottom: .09rem;

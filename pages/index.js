@@ -16,13 +16,16 @@ const searchClient = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, proce
 
 function Hit({ hit }) {
   return (
-    <a href={`/programs/${hit.slug}`}>
-      <div className='row'>
-      <div className='col-4 program-list-search' key="i">
-        <h1 className="program-title">{hit.title}</h1>
-      </div>
-      </div>
-    </a>
+    <Link href={`/programs/${hit.slug}`}>
+          
+      <a>
+        <div className='row'>
+        <div className='col-4 program-list-search' key="i">
+          <h1 className="program-title">{hit.title}</h1>
+        </div>
+        </div>
+      </a>
+    </Link>
   );
 }
 
@@ -40,8 +43,8 @@ export default function Home() {
               <div className="biggio-search">
                 <div className="right-panel">
                   <SearchBox 
-                    onFocus={() => setShowHits(true)}
-                    onBlur={() => setShowHits(false)}
+                    onSubmit={() => setShowHits(true)}
+                    onClick={() => setShowHits(false)}
                   />
                 </div>
       
@@ -49,8 +52,8 @@ export default function Home() {
             </div>
             <NavBar></NavBar>
             <div className="biggio-content-wrapper">
-              <div className='col-10 search-results-container'>
-              {showHits ? <Hits hitComponent={Hit} /> : null}
+              <div className='col-10 search-results-container'>  
+                  {showHits ? <Hits onFocus={() => setShowHits(true)} onBlur={() => setShowHits(false)} hitComponent={Hit} /> : null}
               </div>
               <h2 className="home-page-content-sub-heading">Biggio Mission Statement</h2>
               <p className="content-value values">We bring together the people, ideas, and services that enable Auburn’s teaching community to prepare our graduates to be creative problem solvers in a global economy. Our diverse units offer programming and support to faculty, instructional staff, and graduate teaching assistants. </p>
@@ -59,7 +62,7 @@ export default function Home() {
                   <div className="col-4 units-box top">
                   <Image 
                       className='unit-icons'
-                      src="/_assets/icons/Educational development2.png" 
+                      src="/_assets/icons/Educational Development2.png" 
                       alt="" 
                       layout="responsive"
                       width={500}

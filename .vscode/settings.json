@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/3c703edd-02b0-4143-a0bc-8c322eed0df7/microsoft.web/sites/subscriptions/3c703edd-02b0-4143-a0bc-8c322eed0df7/resourceGroups/Biggio-web/providers/Microsoft.Web/sites/biggio",
+    "appService.deploySubpath": "."
+}
