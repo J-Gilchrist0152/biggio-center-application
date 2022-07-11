@@ -14,7 +14,8 @@ const TestingServices = ({ testingServices  }) => {
         <WhoBanner/>
         <NavBar/>
         <div className='col-12 insight-bios-container'>
-          <h1 className='page-heading'>Testing Services Staff</h1>
+          <div className='col-10 insight-bios-wrapper'>
+          <h2 className='page-heading'>Testing Services Staff</h2>
           <div className='row'>
                 {testingServices.map(testingService => {
                 return (
@@ -33,7 +34,8 @@ const TestingServices = ({ testingServices  }) => {
                     </div>
                 );
                 })}
-        </div>
+            </div>
+          </div>
         </div>
     </div>
     )

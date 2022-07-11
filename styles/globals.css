@@ -414,7 +414,6 @@ transform: none;
 .page-heading{
   display: block;
   position: relative;
-  left:8.5%;
   font-size:2rem;
   padding: 2rem
 }
@@ -1074,12 +1073,10 @@ li.ais-Hits-item {
   padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 3840) {
-  body {
-    font-size: 2.5rem;
-  }
-  
-  h1,h2,h3,h4 {
-    font-size: 2.5rem;
-  }
+.col-10.insight-bios-wrapper {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem;
 }
+

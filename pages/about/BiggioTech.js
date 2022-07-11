@@ -14,7 +14,8 @@ const BiggioTech = ({ biggioTechs  }) => {
         <WhoBanner/>
         <NavBar/>
         <div className='col-12 insight-bios-container'>
-          <h1 className='page-heading'>Biggio Tech Staff</h1>
+          <div className='col-10 insight-bios-wrapper'>
+          <h2 className='page-heading'>Biggio Tech Staff</h2>
           <div className='row'>
                 {biggioTechs.map(biggioTech => {
                 return (
@@ -33,7 +34,8 @@ const BiggioTech = ({ biggioTechs  }) => {
                     </div>
                 );
                 })}
-        </div>
+            </div>
+          </div>
         </div>
     </div>
     )

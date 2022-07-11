@@ -14,26 +14,28 @@ const AuburnOnline = ({ auburnOnlines  }) => {
         <WhoBanner/>
         <NavBar/>
         <div className='col-12 insight-bios-container'>
-          <h1 className='page-heading'>Auburn Online Staff</h1>
+          <div className='col-10 insight-bios-wrapper'>
+          <h2 className='page-heading'>Auburn Online Staff</h2>
           <div className='row'>
                 {auburnOnlines.map(auburnOnline => {
                 return (
                     <div className='col-3 insight-bios-outer' key={auburnOnline.name}>
                         <div className='insight-bios-inner-top'>
-                        <Image src={auburnOnline.profileImage.url} alt="This is an Alt" className='insight-bios-img'/>
+                          <Image src={auburnOnline.profileImage.url} alt="This is an Alt" className='insight-bios-img'/>
                         <div className='insight-bios-inner'>
                             <div className='insight-bios-name'>{auburnOnline.name}</div>
                             <div className='insight-bios-title'>{auburnOnline.positionTitle}</div>
                         </div>
                         </div>
                         <div className='insight-bios-lower'>
-                        <div className='insight-bios-email'>{auburnOnline.email}</div>
-                        <div className='insight-bios-phone'>{auburnOnline.phoneNumber}</div>
+                          <div className='insight-bios-email'>{auburnOnline.email}</div>
+                          <div className='insight-bios-phone'>{auburnOnline.phoneNumber}</div>
                         </div>
                     </div>
                 );
                 })}
-        </div>
+            </div>
+          </div>
         </div>
     </div>
     )

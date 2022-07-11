@@ -14,7 +14,8 @@ const BiggioAdmin = ({ biggioAdmins  }) => {
         <WhoBanner/>
         <NavBar/>
         <div className='col-12 insight-bios-container'>
-          <h1 className='page-heading'>Biggio Admin</h1>
+          <div className='col-10 insight-bios-wrapper'>
+          <h2 className='page-heading'>Biggio Admin</h2>
           <div className='row'>
                 {biggioAdmins.map(biggioAdmin => {
                 return (
@@ -33,7 +34,8 @@ const BiggioAdmin = ({ biggioAdmins  }) => {
                     </div>
                 );
                 })}
-        </div>
+            </div>
+          </div>
         </div>
     </div>
     )
