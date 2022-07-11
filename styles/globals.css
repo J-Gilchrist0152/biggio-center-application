@@ -653,7 +653,7 @@ h3.program-date {
   height: 2px;
   }
 
-  @charset "utf-8";
+@charset "utf-8";
 /* CSS Document */
 
 /* ADOBE FONTS */
@@ -1072,4 +1072,14 @@ li.ais-Hits-item {
 .post-title {
   font-size: 2rem;
   padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 3840) {
+  body {
+    font-size: 2.5rem;
+  }
+  
+  h1,h2,h3,h4 {
+    font-size: 2.5rem;
+  }
 }
