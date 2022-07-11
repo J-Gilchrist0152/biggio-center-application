@@ -1,6 +1,6 @@
 const algoliasearch = require('algoliasearch');
 
-const algolia = algoliasearch(process.env.NEXT_PUBLIC_ALGOLIA_APP_ID, process.env.ALGOLIA_ADMIN_API_KEY);
+const algolia = algoliasearch('6OW40CHNJ1', '63301ce9d05ca40b3c66756d7b0063a5');
 
 const index = algolia.initIndex('biggio-index');
 
