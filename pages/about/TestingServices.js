@@ -1,9 +1,9 @@
 import Head from 'next/head'
-import { Image } from '@chakra-ui/react'
 import WhoBanner from '../graphics/WhoWeAre'
 import Link from 'next/link'
 import NavBar from '../components/_includes/NavBar'
 import { gql, GraphQLClient } from 'graphql-request'
+import Image from 'next/image'
 
 
 const TestingServices = ({ testingServices  }) => {

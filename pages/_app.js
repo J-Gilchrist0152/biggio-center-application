@@ -3,7 +3,6 @@ import Script from 'next/dist/client/script'
 import "bootstrap/dist/css/bootstrap.css";
 import '../styles/globals.css'
 import { useEffect } from "react";
-import { ChakraProvider } from "@chakra-ui/react"
 import { InstantSearch, SearchBox, Hits } from 'react-instantsearch-hooks-web';
 import algoliasearch from 'algoliasearch/lite';
 
@@ -18,13 +17,13 @@ function MyApp({ Component, pageProps }) {
   
 
   return (
-    <ChakraProvider>
+
       <Layout>
         <InstantSearch indexName="biggio-index" searchClient={searchClient}>
           <Component {...pageProps} />
         </InstantSearch>
       </Layout>
-    </ChakraProvider>
+
   )
 }
 

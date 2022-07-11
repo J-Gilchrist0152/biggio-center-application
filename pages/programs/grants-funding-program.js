@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Image } from '@chakra-ui/react'
 import Link from 'next/link'
 import { gql, GraphQLClient } from 'graphql-request'
 import GrantsBanner from '../graphics/GrantsFunding'
