@@ -230,9 +230,9 @@ input.form-control.me-2 {
 }
 .biggio-content-wrapper {
   position: relative;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
-  padding-top: 5vh;
+  padding: 5rem 0;
 }
 .home-page-content-sub-heading {
   color: #000;
@@ -256,10 +256,9 @@ p.content-value.values {
   position: relative;
   display: inline-block;
   width: 33%;
-  min-height: 15rem;
   transform: translateY(0);
   transition: .5s;
-  padding: 2rem;
+  padding: 2rem 4rem;
 }
 
 .col-4.units-box.top:hover, .col-4.units-box.top:focus {
@@ -1051,9 +1050,8 @@ li.ais-Hits-item {
 .ais-SearchBox-submit, .ais-SearchBox-reset {
   position: relative;
   left: 22%;
-  bottom: .09rem;
   background-color: rgb(206,211,217);
-  padding: 0.95rem;
+  padding: 0.5rem .75rem;
   border: 0.15rem solid rgb(11,35,65);
   border-style: outset;
 }
