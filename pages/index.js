@@ -53,7 +53,7 @@ export default function Home() {
             <NavBar></NavBar>
             <div className="biggio-content-wrapper">
               <div className='col-10 search-results-container'>  
-                  {showHits ? <Hits onFocus={() => setShowHits(true)} onBlur={() => setShowHits(false)} hitComponent={Hit} /> : null}
+                  {showHits ? <Hits onSubmit={() => setShowHits(true)} onFocus={() => setShowHits(true)} onBlur={() => setShowHits(false)} hitComponent={Hit} /> : null}
               </div>
               <h2 className="home-page-content-sub-heading">Biggio Mission Statement</h2>
               <p className="content-value values">We bring together the people, ideas, and services that enable Auburn’s teaching community to prepare our graduates to be creative problem solvers in a global economy. Our diverse units offer programming and support to faculty, instructional staff, and graduate teaching assistants. </p>
@@ -134,7 +134,6 @@ export default function Home() {
               </div>
               <div className="col-12 events-cal">
                 <h2 className="home-page-content-sub-heading">Upcoming Events</h2>
-                <Hits hitComponent={Hit} />
               </div>
             </div>
           </div>
