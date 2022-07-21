@@ -6,6 +6,7 @@ import { gql, GraphQLClient } from 'graphql-request'
 import Image from 'next/image'
 
 
+
 const AuburnOnline = ({ auburnOnlines  }) => {
     return (  
 
@@ -21,7 +22,7 @@ const AuburnOnline = ({ auburnOnlines  }) => {
                 return (
                     <div className='col-3 insight-bios-outer' key={auburnOnline.name}>
                         <div className='insight-bios-inner-top'>
-                          <Image src={auburnOnline.profileImage.url} alt="This is an Alt" className='insight-bios-img'/>
+                          <Image src={auburnOnline.profileImage.url} width={10} height={10} layout="responsive" alt="" className='insight-bios-img'/>
                         <div className='insight-bios-inner'>
                             <div className='insight-bios-name'>{auburnOnline.name}</div>
                             <div className='insight-bios-title'>{auburnOnline.positionTitle}</div>
