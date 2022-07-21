@@ -15,6 +15,7 @@ const TestingServicesPrograms = ({ posts  }) => {
         <TestBanner/>
         <NavBar/>
         <div className='col-12 program-container'>
+        <div className='row program-row'>
           {posts.map( post => {
             return (
               <a href={post.slug}>
@@ -25,6 +26,7 @@ const TestingServicesPrograms = ({ posts  }) => {
             </a>
             );
           })}
+          </div>
         </div>
     </div>
     )
@@ -38,7 +40,7 @@ export async function getStaticProps() {
   const { posts } = await graphcms.request(
     `
     {
-      posts(where: {tags_contains_all: "testing-services"}) {
+      posts(where: {tags_contains_all: "testing-services"}, stage: PUBLISHED) {
         title
           slug
           description

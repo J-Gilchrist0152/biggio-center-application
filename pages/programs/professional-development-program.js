@@ -13,6 +13,7 @@ const ProfessionalDevelopment = ({ posts  }) => {
         <ProfBanner/>
         <Navbar/>
         <div className='col-12 program-container'>
+          <div className='row program-row'>
           {posts.map( post => {
             return (
               <a href={post.slug}>
@@ -23,6 +24,7 @@ const ProfessionalDevelopment = ({ posts  }) => {
               </a>
             );
           })}
+          </div>
         </div>
     </div>
     )
@@ -36,7 +38,7 @@ export async function getStaticProps() {
   const { posts } = await graphcms.request(
     `
     {
-      posts(where: {tags_contains_all: "professional-development"}) {
+      posts(where: {tags_contains_all: "professional-development"}, stage: PUBLISHED) {
         title
           slug
           description

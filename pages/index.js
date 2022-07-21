@@ -19,9 +19,9 @@ function Hit({ hit }) {
     <Link href={`/programs/${hit.slug}`}>
           
       <a>
-        <div className='row'>
+        <div className='row hit-row'>
         <div className='col-4 program-list-search' key="i">
-          <h1 className="program-title">{hit.title}</h1>
+          <h1 className="program-title-hits">{hit.title}</h1>
         </div>
         </div>
       </a>
@@ -134,6 +134,7 @@ export default function Home() {
               </div>
               <div className="col-12 events-cal">
                 <h2 className="home-page-content-sub-heading">Upcoming Events</h2>
+                <Hits hitComponent={Hit} />
               </div>
             </div>
           </div>

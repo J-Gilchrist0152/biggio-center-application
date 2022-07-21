@@ -8,10 +8,11 @@ const GrantsFundingDesign = ({ posts  }) => {
     return (  
 
       
-    <div id="main-container" className="col-12 auburn-online-container">
+    <div id="main-container" className="col-12 program-wrapper">
         <GrantsBanner/>
         <NavBar/>
-        <div className='col-12 insight-bios-container'>
+        <div className='col-12 program-container'>
+        <div className='row program-row'>
         {posts.map(post => {
           return (
             <a href={post.slug}>
@@ -22,6 +23,7 @@ const GrantsFundingDesign = ({ posts  }) => {
           </a>
           );
         })}
+        </div>
         </div>
     </div>
     )
@@ -35,7 +37,7 @@ export async function getStaticProps() {
   const { posts } = await graphcms.request(
     `
     {
-      posts(where: {tags_contains_all: "grants-funding"}) {
+      posts(where: {tags_contains_all: "grants-funding"}, stage: PUBLISHED) {
         title
           slug
           description
