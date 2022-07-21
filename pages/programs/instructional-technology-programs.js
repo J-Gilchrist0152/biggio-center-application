@@ -14,11 +14,12 @@ const InstructionalTechnology = ({ posts  }) => {
         <div className='col-12 insight-bios-container'>
         {posts.map(post => {
           return (
-            <div className='col-4 program-list' key={post.title}>
-                <h1>{post.title}</h1>
-                <h3>{post.date}</h3>
-                <h3>{post.description}</h3>
+            <a href={post.slug}>
+            <div className='col-4 program-list' key={post.id}>
+                <h1 className="program-title">{post.title}</h1>
+                <p className="program-description">{post.description}</p>
             </div>
+          </a>
           );
         })}
         </div>

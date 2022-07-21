@@ -18,7 +18,7 @@ const EducationalDevelopment = ({ posts  }) => {
               <a href={post.slug}>
                 <div className='col-4 program-list' key="i">
                     <h1 className="program-title">{post.title}</h1>
-                    <h3 className="program-description">{post.description}</h3>
+                    <p className="program-description">{post.description}</p>
                 </div>
               </a>
             );
